@@ -16,7 +16,7 @@ public class Program {
 		 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		 
 		 
-		 System.out.print("Room number: ");
+		 System.out.print("Room number:   ");
 		 int number = sc.nextInt();
 		 System.out.print("Check-in date (dd/MM/yyyy): ");
 		 Date checkIn = sdf.parse(sc.next());
@@ -39,7 +39,7 @@ public class Program {
 			 
 			 String error = reservation.updateDates(checkIn, checkOut);
 			 if(error!= null) {
-				 System.out.println("Error in reservation: " + error);
+				 System.out.println("Errror in reservation: " + error);
 			 }
 			 else {
 				 	System.out.println("Reservation: " + reservation);	 
